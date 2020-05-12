@@ -8,7 +8,7 @@ nltk.download('wordnet')
 
 def isEnglish(sline):
     flag = False
-    if ( wordnet.synsets(sline[0]) or wordnet.synsets(sline[1]) ):
+    if ( wordnet.synsets(sline[0]) and wordnet.synsets(sline[1]) ):
         flag = True
     return flag
 
